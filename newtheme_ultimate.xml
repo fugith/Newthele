@@ -1,37 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?>
 <theme>
-  <name>New Theme Ultimate</name>
-  <stylesheets>
-    <stylesheet>global.css</stylesheet>
-    <stylesheet>responsive.css</stylesheet>
-    <stylesheet>css3.css</stylesheet>
-    <stylesheet>postbit.css</stylesheet>
-    <stylesheet>forumbit.css</stylesheet>
-  </stylesheets>
-  <templates>
-    <header>
-      <logo>DISOBEY</logo>
-      <navigation>
-        <!-- Navigation items would go here -->
-      </navigation>
-    </header>
-    <footer>
-      <!-- Footer content would go here -->
-    </footer>
-    <index>
-      <!-- Forum display code here -->
-    </index>
-    <forumdisplay>
-      <!-- Thread listings code here -->
-    </forumdisplay>
-    <showthread>
-      <!-- Post display code here -->
-    </showthread>
-    <postbit>
-      <!-- Author info code here -->
-    </postbit>
-    <usercp>
-      <!-- User control panel templates here -->
-    </usercp>
-  </templates>
+    <name>DISOBEY ULTIMATE</name>
+    <description>Cyberpunk dark theme with cyan blue accents, fully responsive and accessible.</description>
+    <stylesheets>
+        <stylesheet>global.css</stylesheet>
+        <stylesheet>responsive.css</stylesheet>
+        <stylesheet>css3.css</stylesheet>
+        <stylesheet>forumbit.css</stylesheet>
+        <stylesheet>postbit.css</stylesheet>
+        <stylesheet>showthread.css</stylesheet>
+        <stylesheet>star_ratings.css</stylesheet>
+        <stylesheet>thread_status.css</stylesheet>
+        <stylesheet>modcp.css</stylesheet>
+        <stylesheet>usercp.css</stylesheet>
+        <stylesheet>hellopl_test.css</stylesheet>
+        <stylesheet>hellopl_sendpm.css</stylesheet>
+    </stylesheets>
+    <templates>
+        <header>
+            <logo>DISOBEY</logo>
+            <navigation>...</navigation>
+        </header>
+        <nav>...</nav>
+        <index>...</index>
+        <forumdisplay>...</forumdisplay>
+        <showthread>...</showthread>
+        <postbit>...</postbit>
+        <newreply>...</newreply>
+        <usercp>...</usercp>
+        <member_profile>...</member_profile>
+        <footer>...</footer>
+        <headerinclude>...</headerinclude>
+    </templates>
 </theme>
