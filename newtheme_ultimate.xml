@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme>
+  <name>New Theme Ultimate</name>
+  <stylesheets>
+    <stylesheet>global.css</stylesheet>
+    <stylesheet>responsive.css</stylesheet>
+    <stylesheet>css3.css</stylesheet>
+    <stylesheet>postbit.css</stylesheet>
+    <stylesheet>forumbit.css</stylesheet>
+  </stylesheets>
+  <templates>
+    <header>
+      <logo>DISOBEY</logo>
+      <navigation>
+        <!-- Navigation items would go here -->
+      </navigation>
+    </header>
+    <footer>
+      <!-- Footer content would go here -->
+    </footer>
+    <index>
+      <!-- Forum display code here -->
+    </index>
+    <forumdisplay>
+      <!-- Thread listings code here -->
+    </forumdisplay>
+    <showthread>
+      <!-- Post display code here -->
+    </showthread>
+    <postbit>
+      <!-- Author info code here -->
+    </postbit>
+    <usercp>
+      <!-- User control panel templates here -->
+    </usercp>
+  </templates>
+</theme>
