@@ -1,0 +1,2086 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme name="zai06" version="1834">
+    <properties>
+        <templateset><![CDATA[26]]></templateset>
+        <editortheme><![CDATA[defaultdark.css]]></editortheme>
+        <imgdir><![CDATA[images]]></imgdir>
+        <logo><![CDATA[images/logo.png]]></logo>
+        <tablespace><![CDATA[5]]></tablespace>
+        <borderwidth><![CDATA[0]]></borderwidth>
+        <color><![CDATA[]]></color>
+        <disporder><![CDATA[a:9:{s:10:"global.css";i:1;s:10:"usercp.css";i:2;s:9:"modcp.css";i:3;s:16:"star_ratings.css";i:4;s:14:"showthread.css";i:5;s:17:"thread_status.css";i:6;s:8:"css3.css";i:7;s:16:"hellopl_test.css";i:8;s:18:"hellopl_sendpm.css";i:9;}]]></disporder>
+    </properties>
+    <stylesheets>
+        <stylesheet name="global.css" version="1834"><![CDATA[/* --- 1. Fonts (Inter هي الساس) --- */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;800;900&display=swap');
+
+body { 
+    background: #0f0f0f !important; 
+    color: #abb2bf !important; 
+    font-family: 'Inter', sans-serif; 
+    margin: 0; 
+}
+
+#container { background: #111111 !important; border: none !important; }
+.wrapper { width: 95% !important; max-width: 1600px !important; margin: 20px auto !important; }
+
+/* --- 2. Logo Area --- */
+.logo-disobey { 
+    font-family: 'Archivo Black', sans-serif; 
+    font-size: 32px; 
+    letter-spacing: -1px; 
+    transform: skewX(-10deg); 
+}
+.logo-disobey .dis { color: #ffffff !important; }
+.logo-disobey .obey { color: #444444 !important; }
+
+/* --- 3. Navigation Bar (Clean & Professional) --- */
+.disobey_nav_bar {
+    background: #0a0a0a !important;
+    border: 1px solid #1a1a1a !important;
+    border-left: 3px solid #00adef !important;
+    padding: 10px 15px !important;
+    margin: 5px 0 !important;
+    display: flex !important;
+    align-items: center;
+}
+
+.breadcrumb_links { 
+    display: flex !important; 
+    gap: 8px; 
+    align-items: center; 
+    font-family: 'Inter', sans-serif;
+    font-size: 11px; 
+    text-transform: uppercase; 
+    font-weight: 700;
+}
+
+.nav_step { color: #00adef !important; text-decoration: none !important; }
+.nav_step.active_step { color: #fff !important; font-weight: 900 !important; }
+.nav_sep { color: #333 !important; margin: 0 5px; }
+
+/* --- 4. Thread Controls --- */
+.thread_controls {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 5px 0 !important;
+    margin: 0 0 10px 0 !important;
+}
+
+.new_reply_button {
+    background: #00adef !important;
+    color: #fff !important;
+    padding: 10px 20px !important;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    border-radius: 2px;
+}
+
+/* --- 5. Tables & Thead (The Clean Fix) --- */
+.tborder { 
+    background: #161616 !important; 
+    border: 1px solid #222 !important; 
+    width: 100% !important; 
+    border-collapse: separate !important; 
+    border-spacing: 0 !important; 
+    margin-bottom: 20px !important; 
+}
+
+.thead {
+    background: #00adef !important;
+    color: #fff !important;
+    padding: 14px 20px !important;
+    font-family: 'Inter', sans-serif !important; 
+    text-transform: uppercase !important;
+    font-weight: 900 !important;
+    font-size: 13px !important;
+    border: none !important;
+    letter-spacing: 0.5px;
+}
+
+.trow1, .trow2 { 
+    background: #121212 !important; 
+    border-bottom: 1px solid #1e1e1e !important; 
+    color: #eee !important; 
+    padding: 12px; 
+}
+
+/* --- 6. Index Stats Alignment (المسطرة) --- */
+.z_header_stats {
+    display: flex !important;
+    gap: 0 !important;
+}
+
+.z_h_stat {
+    width: 80px; 
+    text-align: center;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    opacity: 0.9;
+}
+
+.z_h_stat_lp {
+    width: 260px;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+/* --- 7. Inputs & Tools --- */
+input.textbox, textarea, select { 
+    background: #0d0d0d !important; 
+    color: #d1d1d1 !important; 
+    border: 1px solid #1a1a1a !important; 
+    padding: 8px !important; 
+    font-family: 'Inter', sans-serif;
+}
+
+.thread_tools { 
+    background: #0d0d0d; 
+    border: 1px solid #1a1a1a; 
+    padding: 10px; 
+    display: flex; 
+    justify-content: space-between; 
+    font-size: 10px; 
+    text-transform: uppercase; 
+    font-family: 'Inter', sans-serif;
+}
+
+/* --- 8. Links --- */
+a:link, a:visited { color: #00adef; text-decoration: none; transition: 0.2s; }
+a:hover { color: #fff; }]]></stylesheet>
+        <stylesheet name="css3.css" version="1834"><![CDATA[tr td.trow1:first-child,
+tr td.trow2:first-child,
+tr td.trow_shaded:first-child {
+    border-left: 0;
+}
+
+tr td.trow1:last-child,
+tr td.trow2:last-child,
+tr td.trow_shaded:last-child {
+    border-right: 0;
+}
+
+.tborder {
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    border-radius: 7px;
+}
+
+.tborder tbody tr:last-child > td {
+    border-bottom: 0;
+}
+
+.tborder tbody tr:last-child > td:first-child {
+    -moz-border-radius-bottomleft: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+.tborder tbody tr:last-child > td:last-child {
+    -moz-border-radius-bottomright: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.thead {
+    -moz-border-radius-topleft: 6px;
+    -moz-border-radius-topright: 6px;
+    -webkit-border-top-left-radius: 6px;
+    -webkit-border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.thead_collapsed {
+    -moz-border-radius-bottomleft: 6px;
+    -moz-border-radius-bottomright: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    -webkit-border-bottom-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.thead_left {
+    -moz-border-radius-topright: 0;
+    -webkit-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.thead_right {
+    -moz-border-radius-topleft: 0;
+    -webkit-border-top-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.tcat_menu {
+    -moz-border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+
+.tborder tbody:nth-last-child(2) .tcat_collapse_collapsed {
+    -moz-border-radius-bottomleft: 6px !important;
+    -moz-border-radius-bottomright: 6px !important;
+    -webkit-border-bottom-left-radius: 6px !important;
+    -webkit-border-bottom-right-radius: 6px !important;
+    border-bottom-left-radius: 6px !important;
+    border-bottom-right-radius: 6px !important;
+}
+
+button,
+input.button,
+input.textbox,
+input.invalid_field,
+input.valid_field,
+select,
+textarea,
+.editor_control_bar,
+blockquote,
+.codeblock,
+fieldset,
+.pm_alert,
+.red_alert,
+.popup_menu,
+.postbit_buttons > a,
+a.button {
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.post.classic .post_author {
+    -moz-border-radius: 0 6px 6px 0;
+    -webkit-border-radius: 0 6px 6px 0;
+    border-radius: 0 6px 6px 0;
+}
+
+.popup_menu .popup_item_container:first-child .popup_item {
+    -moz-border-radius-topleft: 6px;
+    -moz-border-radius-topright: 6px;
+    -webkit-border-top-left-radius: 6px;
+    -webkit-border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.popup_menu .popup_item_container:last-child .popup_item {
+    -moz-border-radius-bottomleft: 6px;
+    -moz-border-radius-bottomright: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    -webkit-border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.pagination a {
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.pollbar {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+div.error {
+    -moz-border-radius: 6px;
+        -webkit-border-radius: 6px;
+        border-radius: 6px;
+}]]></stylesheet>
+        <stylesheet name="hellopl_test.css" version="1834"><![CDATA[#pluginlibrary { background: #026CB1 url(images/thead_bg.gif); color: white; }]]></stylesheet>
+        <stylesheet name="usercp.css" attachedto="usercp.php|private.php" version="1834"><![CDATA[.usercp_nav_item {
+    display: block;
+    padding: 1px 0 1px 23px;
+    background-image: url(images/usercp_sprite.png);
+    background-repeat: no-repeat;
+}
+
+.usercp_nav_composepm {
+    background-position: 0 0;
+}
+
+.usercp_nav_pmfolder {
+    background-position: 0 -20px;
+}
+
+.usercp_nav_sub_pmfolder {
+    padding-left: 40px;
+    background-position: 0 -40px;
+}
+
+.usercp_nav_trash_pmfolder {
+    padding-left: 40px;
+    background-position: 0 -60px;
+}
+
+.usercp_nav_pmtracking {
+    background-position: 0 -80px;
+}
+
+.usercp_nav_pmfolders {
+    background-position: 0 -100px;
+}
+
+.usercp_nav_profile {
+    background-position: 0 -120px;
+}
+
+.usercp_nav_email {
+    padding-left: 40px;
+    background-position: 0 -140px;
+}
+
+.usercp_nav_password {
+    padding-left: 40px;
+    background-position: 0 -160px;
+}
+
+.usercp_nav_username {
+    padding-left: 40px;
+    background-position: 0 -180px;
+}
+
+.usercp_nav_editsig {
+    padding-left: 40px;
+    background-position: 0 -200px;
+}
+
+.usercp_nav_avatar {
+    padding-left: 40px;
+    background-position: 0 -220px;
+}
+
+.usercp_nav_options {
+    background-position: 0 -240px;
+}
+
+.usercp_nav_usergroups {
+    background-position: 0 -260px;
+}
+
+.usercp_nav_editlists {
+    background-position: 0 -280px;
+}
+
+.usercp_nav_attachments {
+    background-position: 0 -300px;
+}
+
+.usercp_nav_drafts {
+    background-position: 0 -320px;
+}
+
+.usercp_nav_subscriptions {
+    background-position: 0 -340px;
+}
+
+.usercp_nav_fsubscriptions {
+    background-position: 0 -360px;
+}
+
+.usercp_nav_viewprofile {
+    background-position: 0 -380px;
+}
+
+.usercp_nav_home {
+    background-position: 0 -400px;
+}
+
+.usercp_notepad {
+    width: 99%;
+}
+
+.usercp_container {
+    margin: 5px;
+    padding: 8px;
+    border:1px solid #CCCCCC;
+}
+
+.pmspace {
+    float: right;
+    margin: -3px 5px;
+}
+
+.pmspace_container {
+    background: #fff;
+    border: 1px solid #ccc;
+    width: 100px;
+    display: inline-block;
+}
+
+.pmspace_used {
+    display: inline-block;
+    color: #fff;
+    margin: -1px;
+}
+
+.pmspace_used.low {
+    border: 1px solid #0c5a01;
+    background: #167203;
+}
+
+.pmspace_used.medium {
+    background: #ff862b;
+    border: 1px solid #d7611e;
+}
+
+.pmspace_used.high {
+    background: #e73c3c;
+    border: 1px solid #c00;
+}
+
+.pmspace_unused {
+    display: inline-block;
+}
+
+.pmspace_text {
+    padding: 1px 5px;
+    display: inline-block;
+}
+
+.new_pm {
+    font-weight: bold;
+}]]></stylesheet>
+        <stylesheet name="thread_status.css" attachedto="forumdisplay.php|usercp.php|search.php" version="1834"><![CDATA[.thread_status {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(images/folders_sprite.png);
+    background-repeat: no-repeat;
+}
+
+.thread_status.dot_folder {
+    background-position: 0 0;
+}
+
+.thread_status.dot_hotfolder {
+    background-position: 0 -20px;
+}
+
+.thread_status.dot_hotclosefolder {
+    background-position: 0 -40px;
+}
+
+.thread_status.dot_closefolder {
+    background-position: 0 -60px;
+}
+
+.thread_status.dot_newfolder {
+    background-position: 0 -80px;
+}
+
+.thread_status.dot_newhotfolder {
+    background-position: 0 -100px;
+}
+
+.thread_status.dot_newhotclosefolder {
+    background-position: 0 -120px;
+}
+
+.thread_status.dot_newclosefolder {
+    background-position: 0 -140px;
+}
+
+.thread_status.folder {
+    background-position: 0 -160px;
+}
+
+.thread_status.hotfolder {
+    background-position: 0 -180px;
+}
+
+.thread_status.hotclosefolder {
+    background-position: 0 -200px;
+}
+
+.thread_status.closefolder {
+    background-position: 0 -220px;
+}
+
+.thread_status.movefolder {
+    background-position: 0 -240px;
+}
+
+.thread_status.newfolder {
+    background-position: 0 -260px;
+}
+
+.thread_status.newhotfolder {
+    background-position: 0 -280px;
+}
+
+.thread_status.newhotclosefolder {
+    background-position: 0 -300px;
+}
+
+.thread_status.newclosefolder {
+    background-position: 0 -320px;
+}]]></stylesheet>
+        <stylesheet name="hellopl_sendpm.css" attachedto="private.php?send" version="1834"><![CDATA[#pluginlibrary {
+    text-align: center;
+    font-style: italic;
+    border: dashed red 5px;
+}]]></stylesheet>
+        <stylesheet name="modcp.css" attachedto="modcp.php" version="1834"><![CDATA[.modcp_nav_item {
+    display: block;
+    padding: 1px 0 1px 23px;
+    background-image: url(images/modcp_sprite.png);
+    background-repeat: no-repeat;
+}
+
+.modcp_nav_home {
+    background-position: 0 0;
+}
+
+.modcp_nav_announcements {
+    background-position: 0 -20px;
+}
+
+.modcp_nav_reports {
+    background-position: 0 -40px;
+}
+
+.modcp_nav_modqueue {
+    background-position: 0 -60px;
+}
+
+.modcp_nav_modlogs {
+    background-position: 0 -80px;
+}
+
+.modcp_nav_editprofile {
+    background-position: 0 -100px;
+}
+
+.modcp_nav_banning {
+    background-position: 0 -120px;
+}
+
+.modcp_nav_warninglogs {
+    background-position: 0 -140px;
+}
+
+.modcp_nav_ipsearch {
+    background-position: 0 -160px;
+}
+
+.modqueue_message {
+    overflow: auto;
+    max-height: 250px;
+}
+
+.modqueue_controls {
+    width: 270px;
+    float: right;
+    text-align: center;
+    border: 1px solid #ccc;
+    background: #fff;
+    padding: 6px;
+    font-weight: bold;
+}
+
+.modqueue_controls label {
+    margin-right: 8px;
+}
+
+.label_radio_ignore,
+.label_radio_delete,
+.label_radio_approve {
+    font-weight: bold;
+}
+
+.modqueue_meta {
+    color: #444;
+    font-size: 95%;
+    margin-bottom: 8px;
+}
+
+.modqueue_mass {
+    list-style: none;
+    margin: 0;
+    width: 150px;
+    padding: 0;
+}
+
+.modqueue_mass li {
+    margin-bottom: 4px;
+    padding: 0;
+}
+
+.modqueue_mass li a {
+    display: block;
+    padding: 4px;
+    border: 1px solid transparent;
+}
+
+.modqueue_mass li a:hover {
+    background: #efefef;
+    border: 1px solid #ccc;
+    text-decoration: none;
+}]]></stylesheet>
+        <stylesheet name="star_ratings.css" attachedto="forumdisplay.php|showthread.php" version="1834"><![CDATA[.star_rating,
+.star_rating li a:hover,
+.star_rating .current_rating {
+    background: url(images/star_rating.png) left -1000px repeat-x;
+    vertical-align: middle;
+}
+
+.star_rating {
+    position: relative;
+    width:80px;
+    height:16px;
+    overflow: hidden;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-position: left top;
+}
+
+td .star_rating {
+    margin: auto;
+}
+
+.star_rating li {
+    display: inline;
+}
+
+.star_rating li a,
+.star_rating .current_rating {
+    position: absolute;
+    text-indent: -1000px;
+    height: 16px;
+    line-height: 16px;
+    outline: none;
+    overflow: hidden;
+    border: none;
+    top:0;
+    left:0;
+}
+
+.star_rating_notrated li a:hover {
+    background-position: left bottom;
+}
+
+.star_rating li a.one_star {
+    width:20%;
+    z-index:6;
+}
+
+.star_rating li a.two_stars {
+    width:40%;
+    z-index:5;
+}
+
+.star_rating li a.three_stars {
+    width:60%;
+    z-index:4;
+}
+
+.star_rating li a.four_stars {
+    width:80%;
+    z-index:3;
+}
+
+.star_rating li a.five_stars {
+    width:100%;
+    z-index:2;
+}
+
+.star_rating .current_rating {
+    z-index:1;
+    background-position: left center;
+}
+
+.star_rating_success,
+.success_message {
+    color: #00b200;
+    font-weight: bold;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.inline_rating {
+    background: url(images/star_rating.png) left -1000px repeat-x;
+    float: left;
+    vertical-align: middle;
+    padding-right: 5px;
+}]]></stylesheet>
+        <stylesheet name="showthread.css" attachedto="showthread.php" version="1834"><![CDATA[ul.thread_tools,
+ul.thread_tools li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.thread_tools li {
+    padding-left: 24px;
+    padding-bottom: 4px;
+    margin-bottom: 3px;
+    font-size: 11px;
+    background-image: url(images/showthread_sprite.png);
+    background-repeat: no-repeat;
+}
+
+ul.thread_tools li.printable {
+    background-position: 0 0;
+}
+
+ul.thread_tools li.sendthread {
+    background-position: 0 -20px;
+}
+
+ul.thread_tools li.subscription_add {
+    background-position: 0 -40px;
+}
+
+ul.thread_tools li.subscription_remove {
+    background-position: 0 -60px;
+}
+
+ul.thread_tools li.poll {
+    background-position: 0 -80px;
+}
+
+.showthread_spinner {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    padding: 20px;
+}]]></stylesheet>
+    </stylesheets>
+    <templates>
+        <template name="forumbit_depth1_cat" version="1834"><![CDATA[<table border="0" cellspacing="0" cellpadding="0" class="tborder zgeek_table" style="width: 100%; border-collapse: collapse; margin-bottom: 15px;">
+<thead>
+    <tr>
+        <td class="thead">
+            <div style="display: flex; align-items: center; justify-content: space-between;">
+                <div style="display: flex; align-items: center;">
+                    <div class="expcolimage" style="margin-right: 15px;">
+                        <img src="{$theme['imgdir']}/collapse{$collapsedimg}.png" id="cat_{$forum['fid']}_img" class="expander" alt="[-]" title="[-]" style="cursor: pointer; filter: brightness(2);" />
+                    </div>
+                    <strong><a href="forumdisplay.php?fid={$forum['fid']}" style="color: #fff !important; text-decoration: none;">{$forum['name']}</a></strong>
+                </div>
+                
+                <div class="z_header_stats">
+                    <span class="z_h_stat">THREADS</span>
+                    <span class="z_h_stat">POSTS</span>
+                    <span class="z_h_stat_lp">LAST POST</span>
+                </div>
+            </div>
+        </td>
+    </tr>
+</thead>
+<tbody id="cat_{$forum['fid']}_e" style="{$expdisplay}">
+    {$sub_forums}
+</tbody>
+</table>]]></template>
+        <template name="forumbit_depth2_forum" version="1834"><![CDATA[<tr>
+    <td colspan="5" style="padding: 0 !important; border: none !important; background: transparent !important;">
+        <div class="z_row">
+            <div class="z_info_area">
+                <div class="z_icon_box forum_status forum_{$lightbulb['folder']}">
+                    <i class="fa fa-comments-o"></i>
+                </div>
+                <div class="z_titles_box">
+                    <a href="forumdisplay.php?fid={$forum['fid']}" class="z_f_link">{$forum['name']}</a>
+                    <div class="z_f_desc">{$forum['description']}</div>
+                </div>
+            </div>
+
+            <div class="z_stats_group">
+                <span class="z_stat_n">{$threads}</span>
+                <span class="z_stat_n">{$posts}</span>
+            </div>
+
+            <div class="z_last_area">
+                {$lastpost}
+            </div>
+        </div>
+    </td>
+</tr>
+
+<style>
+    .z_row { display: flex; align-items: center; background: #0d0d0d; border-bottom: 1px solid #111; padding: 12px 20px; transition: 0.2s; }
+    .z_row:hover { background: #111; }
+    .z_icon_box { flex: 0 0 42px; height: 42px; background: #0a0a0a; display: flex; align-items: center; justify-content: center; border: 1px solid #181818; border-radius: 4px; margin-right: 18px; color: #222; font-size: 20px; }
+    .z_info_area { flex: 1; display: flex; align-items: center; min-width: 0; }
+    .z_f_link { color: #00adef !important; font-size: 13px; font-weight: 800; text-transform: uppercase; text-decoration: none !important; font-family: 'Inter', sans-serif; }
+    .z_f_desc { color: #555 !important; font-size: 11px; margin-top: 3px; font-family: 'Inter', sans-serif; }
+    .z_stats_group { display: flex; width: 160px; flex-shrink: 0; }
+    .z_stat_n { width: 80px; text-align: center; color: #888; font-weight: 900; font-size: 14px; font-family: monospace; }
+    .z_last_area { width: 260px; flex-shrink: 0; font-size: 11px; color: #666; text-align: center; border-left: 1px solid #151515; font-family: 'Inter', sans-serif; }
+    .z_last_area a { color: #aaa !important; font-weight: bold; }
+    .forum_on { color: #00adef !important; border-color: #00adef !important; }
+</style>]]></template>
+        <template name="forumdisplay" version="1834"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']} - {$foruminfo['name']} </title>
+{$headerinclude}
+{$rssdiscovery}
+<script type="text/javascript">
+</script>
+<script type="text/javascript" src="{$mybb->asset_url}/jscripts/jeditable/jeditable.min.js"></script>
+<script type="text/javascript" src="{$mybb->asset_url}/jscripts/inline_edit.js?ver=1821"></script>
+</head>
+<body>
+{$header}
+{$moderatedby}
+{$usersbrowsing}
+{$rules}
+{$subforums}
+{$threadslist}
+{$footer}
+</body>
+</html>]]></template>
+        <template name="forumdisplay_thread" version="1834"><![CDATA[<tr class="inline_row" id="thread_{$thread['tid']}">
+    <td align="center" class="z_row_cell" width="2%"><span class="thread_status {$folder}">&nbsp;</span></td>
+    <td align="center" class="z_row_cell" width="2%">{$icon}</td>
+    <td class="z_row_cell">
+        <div>
+            <span style="display: block; margin-bottom: 4px;">
+                {$prefix} {$gotounread}
+                <span class="{$inline_edit_class}" id="tid_{$inline_edit_tid}">
+                    <a href="{$thread['threadlink']}" style="color: #eee; font-weight: 700; font-size: 14px; text-decoration: none;">{$thread['subject']}</a>
+                </span>
+                {$thread['multipage']}
+            </span>
+            <span style="font-size: 11px; color: #555;">by {$thread['profilelink']} - {$thread['start_datetime']}</span>
+        </div>
+    </td>
+    <td align="center" class="z_row_cell">
+        <a href="misc.php?action=whoposted&tid={$thread['tid']}" onclick="MyBB.whoPosted({$thread['tid']}); return false;" style="color: #00adef; font-weight: 900; text-decoration: none;">{$thread['replies']}</a>
+    </td>
+    <td align="center" class="z_row_cell" style="color: #666; font-family: monospace;">{$thread['views']}</td>
+    <td class="z_row_cell" align="right" style="padding-right: 20px !important;">
+        <div style="font-size: 11px;">
+            <span style="color: #888;">{$lastpostdate}</span><br />
+            <span style="color: #00adef; font-weight: bold;">by {$lastposterlink}</span>
+        </div>
+    </td>
+    {$modbit}
+</tr>
+
+<style>
+    .z_row_cell { padding: 12px 10px !important; border-bottom: 1px solid #151515 !important; vertical-align: middle !important; background: transparent !important; }
+    input[type="checkbox"].checkbox { accent-color: #00adef; transform: scale(1.2); cursor: pointer; }
+</style>]]></template>
+        <template name="forumdisplay_threadlist" version="1834"><![CDATA[<div class="float_left">{$multipage}</div>
+<a href="newthread.php?fid={$fid}" class="post_thread_btn">POST THREAD</a>
+<div style="clear: both;"></div>
+
+<form action="moderation.php" method="post" id="inlinemod">
+    <input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
+    <input type="hidden" name="fid" value="{$fid}" />
+
+    <table border="0" cellspacing="0" cellpadding="0" class="z_main_table">
+        <thead>
+            <tr>
+                <td class="thead z_header_block" colspan="6">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span class="z_cat_text">{$foruminfo['name']}</span>
+                        <span class="smalltext"><strong><a href="misc.php?action=markread&amp;fid={$fid}{$post_code_string}" style="color: #00adef; text-decoration: none;">MARK READ</a></strong></span>
+                    </div>
+                </td>
+            </tr>
+            <tr class="z_sub_header">
+                <td colspan="3">THREAD / AUTHOR</td>
+                <td align="center" width="10%">REPLIES</td>
+                <td align="center" width="10%">VIEWS</td>
+                <td align="right" width="20%" style="padding-right: 20px !important;">LAST POST</td>
+                {$inlinemodcol}
+            </tr>
+        </thead>
+        <tbody>
+            {$selectall}
+            {$announcementlist}
+            {$threads}
+            {$forumsort}
+        </tbody>
+    </table>
+    
+    <div class="z_mod_action_bar">
+        {$inlinemod}
+    </div>
+</form>
+
+<div style="margin-top: 10px;">{$multipage}</div>
+
+{$inline_edit_js}
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        if (typeof InlineModeration !== "undefined") {
+            inlineModeration = new InlineModeration();
+        }
+    });
+</script>
+
+<style>
+    .z_main_table { width: 100%; background: #080808; border: 1px solid #1a1a1a; border-collapse: collapse; margin-top: 15px; }
+    .z_header_block { background: #000; border-bottom: 2px solid #00adef; padding: 12px 15px !important; }
+    .z_cat_text { color: #fff; font-family: 'Arial Black', sans-serif; font-size: 16px; text-transform: uppercase; letter-spacing: 1px; }
+    .z_sub_header td { background: #111 !important; color: #00adef !important; font-size: 10px !important; font-weight: 900 !important; padding: 10px !important; text-transform: uppercase; border-bottom: 1px solid #222 !important; }
+    .post_thread_btn { background: #00adef; color: #fff !important; padding: 8px 18px; font-weight: 900; text-transform: uppercase; text-decoration: none !important; display: inline-block; border-radius: 2px; font-size: 12px; float: right; }
+    .z_mod_action_bar { background: #0a0a0a; padding: 15px; border: 1px solid #1a1a1a; border-top: none; text-align: right; }
+    .inline_selected td { background: rgba(0, 173, 239, 0.15) !important; border-bottom: 1px solid #00adef !important; }
+</style>]]></template>
+        <template name="header" version="1834"><![CDATA[<div class="top-bar-torn">
+    <div class="wrapper-flex">
+        <div class="logo-box broken-neon">
+            <div class="logo-disobey">
+                <a href="index.php">
+                    <span class="dis">DIS</span><span class="obey">OBEY</span>
+                </a>
+            </div>
+            <div class="cracks-container">
+                <div class="crack"></div>
+                <div class="crack"></div>
+            </div>
+        </div>
+
+        <div class="nav-content">
+            <div class="upper-links">
+                <div class="LinkBars"><a href="wiki.php">Wiki</a></div>
+                <div class="LinkBars"><a href="rules.php">Rules</a></div>
+                <div class="LinkBars"><a href="memberlist.php">Members</a></div>
+                <div class="LinkBars"><a href="staff.php">Staff</a></div>
+                <div class="LinkBars"><a href="credits.php">Credits</a></div>
+            </div>
+            <div class="user-block">{$welcomeblock}</div>
+        </div>
+    </div>
+</div>
+
+<style>
+/* 1. Base Layout */
+.top-bar-torn { background: #151515; border-bottom: 2px solid #000; position: relative; z-index: 100; }
+.wrapper-flex { display: flex; align-items: stretch; }
+
+/* 2. Logo Box & Colors */
+.logo-box.broken-neon {
+    background: #080808;
+    padding: 20px 50px;
+    border-right: 1px solid #222;
+    display: flex; align-items: center; justify-content: center;
+    position: relative; overflow: hidden; cursor: pointer;
+}
+
+.logo-disobey a { 
+    text-decoration: none !important; 
+    font-family: 'Arial Black', sans-serif; 
+    font-size: 38px; font-weight: 900; letter-spacing: -2px;
+    transform: skewX(-12deg);
+    display: block;
+}
+
+.logo-disobey .dis { color: #222 !important; text-shadow: none !important; transition: 0.3s; }
+.logo-disobey .obey { color: #333 !important; text-shadow: none !important; transition: 0.3s; }
+
+@keyframes neonIgnite {
+    0%, 10%, 25% { color: #00adef; text-shadow: 0 0 20px #00adef, 0 0 40px #00adef; opacity: 1; }
+    5%, 15%, 30% { color: #080808; text-shadow: none; opacity: 0.5; }
+    35%, 100% { color: #00adef; text-shadow: 0 0 15px #00adef, 0 0 5px #fff; opacity: 1; }
+}
+
+.logo-box:hover .dis { animation: neonIgnite 0.5s ease-in-out forwards !important; }
+.logo-box:hover .obey { color: #ffffff !important; text-shadow: 0 0 10px rgba(255,255,255,0.8) !important; transition: 0.2s; }
+
+.cracks-container { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 5; opacity: 0.3; }
+.crack { position: absolute; background: rgba(255, 255, 255, 0.1); }
+.crack:nth-child(1) { width: 100%; height: 1px; top: 45%; left: -10%; transform: rotate(15deg); }
+.crack:nth-child(2) { width: 100%; height: 1px; top: 55%; left: 5%; transform: rotate(-10deg); }
+
+.nav_inner { display: flex; align-items: center; }
+.terminal_svg svg { width: 16px; height: 16px; fill: #00adef; margin-right: 15px; display: block; }
+
+.breadcrumb_links {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #444;
+}
+
+.breadcrumb_links a { color: #00adef !important; text-decoration: none !important; transition: 0.3s; }
+.breadcrumb_links a:hover { color: #fff !important; text-shadow: 0 0 5px #00adef; }
+
+/* Base UI Fixes */
+.nav-content { flex-grow: 1; display: flex; flex-direction: column; }
+.upper-links { display: flex; align-items: center; gap: 25px; padding: 12px 25px; background: rgba(0,0,0,0.4); }
+.LinkBars a { color: #888 !important; text-decoration: none !important; font-size: 13px; font-weight: 700; text-transform: uppercase; transition: 0.3s; }
+.LinkBars a:hover { color: #00adef !important; }
+
+.search-wrap input { background: #000 !important; border: 1px solid #333 !important; color: #eee !important; padding: 5px 12px !important; border-radius: 4px; outline: none; }
+.user-block { display: flex; justify-content: flex-end; padding: 10px 25px; }
+
+.top-bar-torn::after { 
+    content: ""; display: block; height: 2px; 
+    background: linear-gradient(90deg, #00adef, transparent); 
+    box-shadow: 0 0 10px rgba(0, 173, 239, 0.3);
+}
+</style>]]></template>
+        <template name="headerinclude" version="1834"><![CDATA[{$stylesheets}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<script type="text/javascript">
+    var cookieDomain = "{$mybb->settings['cookiedomain']}";
+    var cookiePath = "{$mybb->settings['cookiepath']}";
+    var cookiePrefix = "{$mybb->settings['cookieprefix']}";
+    var cookieSecureFlag = "{$mybb->settings['cookiesecureflag']}";
+    var cookieSameSite = "{$mybb->settings['cookiesamesite']}";
+    var my_post_key = "{$mybb->post_code}";
+    var lang = {
+        pointless_reasons: "{$lang->pointless_reasons}"
+    };
+    var spinner = "<img src='{$theme['imgdir']}/spinner.gif' alt='' />";
+</script>
+
+<script type="text/javascript" src="{$mybb->asset_url}/jscripts/jquery.js?ver=1823"></script>
+<script type="text/javascript" src="{$mybb->asset_url}/jscripts/jquery.plugins.min.js?ver=1821"></script>
+<script type="text/javascript" src="{$mybb->asset_url}/jscripts/general.js?ver=1821"></script>
+<script type="text/javascript" src="{$mybb->asset_url}/jscripts/inline_moderation.js?ver=1821"></script>
+<script type="text/javascript" src="{$mybb->asset_url}/jscripts/inline_edit.js?ver=1821"></script>
+
+<script type="text/javascript">
+function forceZGeekEditor() {
+    var editorIframe = $(".sceditor-container iframe")[0];
+    if (editorIframe) {
+        var doc = editorIframe.contentDocument || editorIframe.contentWindow.document;
+        if (doc && !doc.getElementById('zgeek-fix')) {
+            var style = doc.createElement('style');
+            style.id = 'zgeek-fix';
+            style.innerHTML = `
+                body { 
+                    background: #0d0d0d !important; 
+                    color: #eeeeee !important; 
+                    font-family: 'Segoe UI', Tahoma, sans-serif !important; 
+                    font-size: 15px !important; 
+                    line-height: 1.6 !important;
+                }
+                blockquote { 
+                    background: #151515 !important; 
+                    border: none !important;
+                    border-left: 3px solid #00adef !important; 
+                    color: #999 !important; 
+                    padding: 10px !important;
+                    margin: 10px 0 !important;
+                }
+                cite { color: #00adef !important; font-weight: bold !important; display: block !important; margin-bottom: 5px !important; }
+            `;
+            doc.head.appendChild(style);
+        }
+    }
+}
+
+// Reduced interval from 500ms to 2000ms for better performance
+setInterval(forceZGeekEditor, 2000);
+
+// Update original message on form submit
+ $(document).on('submit', 'form', function() {
+    if ($('#message').data('sceditor')) {
+        $('#message').data('sceditor').updateOriginal();
+    }
+});
+</script>
+
+<style>
+/* Quote styling */
+blockquote {
+    background: #0d0d0d !important;
+    border: 1px solid #1a1a1a !important;
+    border-left: 4px solid #00adef !important;
+    color: #b0b0b0 !important;
+    padding: 15px 20px !important;
+    margin: 20px 0 !important;
+    border-radius: 0 4px 4px 0 !important;
+    font-size: 14px !important;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+}
+
+blockquote cite {
+    display: block !important;
+    font-size: 11px !important;
+    font-weight: 900 !important;
+    text-transform: uppercase !important;
+    color: #00adef !important;
+    margin-bottom: 10px !important;
+    border-bottom: 1px solid #1a1a1a;
+    padding-bottom: 5px;
+    font-style: normal !important;
+}
+
+/* Table fixes */
+.tborder { background: #111 !important; border: 1px solid #1a1a1a !important; border-radius: 4px !important; }
+.trow1, .trow2 { background: #0d0d0d !important; color: #d1d1d1 !important; border-bottom: 1px solid #151515 !important; }
+
+/* Moderation selection */
+.inline_selected td { 
+    background: rgba(0, 173, 239, 0.1) !important; 
+    border-bottom: 1px solid #00adef !important; 
+}
+
+/* Editor styling */
+.sceditor-container { background: #0d0d0d !important; border: 1px solid #1a1a1a !important; }
+.sceditor-toolbar { background: #080808 !important; border-bottom: 1px solid #151515 !important; }
+.sceditor-button div { filter: invert(1) brightness(1.5) !important; }
+.sceditor-group { background: #151515 !important; border: 1px solid #222 !important; }
+
+/* Hide unnecessary fields in quick reply */
+.posticons_container, .smilie_container, #subject_field, .subject_field { display: none !important; }
+
+/* Quick reply textarea color fix */
+#message, .quick_reply_box { background: #0d0d0d !important; color: #eee !important; border: 1px solid #222 !important; }
+</style>]]></template>
+        <template name="header_welcomeblock_member" version="1834"><![CDATA[<div class="user-panel-envy">
+    <div class="user-icons">
+        <a href="usercp.php" class="icon-circle" title="User CP"><i class="fa fa-cog"></i></a>
+        
+        {$modcplink}
+        
+        {$admincplink}
+        
+        <a href="search.php?action=getnew" class="icon-circle" title="New Posts"><i class="fa fa-bolt"></i></a>
+        
+        <a href="private.php" class="icon-circle {$pms_unused_class}" title="Messages">
+            <i class="fa fa-envelope"></i>
+        </a>
+        
+        <a href="member.php?action=logout&amp;logoutkey={$mybb->user['logoutkey']}" class="icon-circle logout" title="Logout">
+            <i class="fa fa-power-off"></i>
+        </a>
+    </div>
+</div>
+
+<style>
+.user-panel-envy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.user-icons {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.icon-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    background: #2a2a2a;
+    border: 1px solid #333;
+    border-radius: 50%;
+    color: #aaa !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+    font-size: 14px;
+}
+
+.icon-circle:hover {
+    transform: translateY(-3px);
+    background: #333;
+    color: #00adef !important;
+    border-color: #00adef;
+    box-shadow: 0 0 10px rgba(0, 173, 239, 0.4);
+}
+
+.icon-circle.logout:hover {
+    color: #ff4444 !important;
+    border-color: #ff4444;
+    box-shadow: 0 0 10px rgba(255, 68, 68, 0.4);
+}
+
+.pms_new {
+    background: #00adef !important;
+    color: #fff !important;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 0 0 rgba(0, 173, 239, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(0, 173, 239, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(0, 173, 239, 0); }
+}
+</style>]]></template>
+        <template name="header_welcomeblock_member_admin" version="1834"><![CDATA[<a href="admin/index.php" class="icon-circle" title="Admin CP"><i class="fa fa-shield"></i></a>]]></template>
+        <template name="header_welcomeblock_member_moderator" version="1834"><![CDATA[<a href="{$mybb->settings['bburl']}/modcp.php" class="icon-circle" title="Mod CP"><i class="fa fa-gavel"></i></a>]]></template>
+        <template name="index" version="1834"><![CDATA[<html>
+<head>
+<title>{$mybb->settings['bbname']}</title>
+{$headerinclude}
+
+<style>
+    /* ZGEEK OFFICIAL SIDEBAR SYSTEM */
+    .z_sidebar_container { 
+        width: 330px !important; 
+        padding-left: 20px; 
+    }
+
+    .z_card {
+        background: #080808;
+        border: 1px solid #1a1a1a !important;
+        position: relative;
+        overflow: hidden;
+        transition: 0.4s ease;
+    }
+
+    .sidebar_header_modern {
+        background: #00adef !important; 
+        position: relative;
+        padding: 12px 15px !important;
+        margin: -1px -1px 0 -1px;
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
+
+    .sidebar_header_modern:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 120px;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.25);
+        transform: skewX(-30deg) translateX(40px);
+    }
+
+    .sidebar_header_title {
+        color: #fff;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        font-size: 11px;
+        position: relative;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+    }
+    
+    .sidebar_header_title i { margin-right: 8px; font-size: 14px; }
+
+    .neon_line {
+        height: 2px;
+        width: 30px;
+        background: #1a1a1a;
+        margin-bottom: 12px;
+        transition: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .z_card:hover .neon_line { 
+        width: 100%; 
+        background: #00adef; 
+        box-shadow: 0 0 12px #00adef; 
+    }
+
+    .profile_flex { 
+        display: flex; 
+        padding: 25px 20px 20px 20px; 
+        align-items: flex-start; 
+    }
+
+    .pfp_area { text-align: center; width: 95px; }
+
+    .pfp_side {
+        width: 90px;
+        height: 90px;
+        filter: grayscale(1) brightness(0.5);
+        border: 1px solid #1a1a1a;
+        transition: 0.5s;
+        object-fit: cover;
+        padding: 2px;
+        background: #000;
+    }
+
+    .z_card:hover .pfp_side { 
+        filter: grayscale(0) brightness(1.1); 
+        border-color: #00adef;
+        box-shadow: 0 0 15px rgba(0, 173, 239, 0.2);
+    }
+
+    .sidebar_user_name {
+        margin-top: 12px;
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .stats_grid {
+        margin-left: 25px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 18px 10px;
+        flex-grow: 1;
+        padding-top: 10px;
+    }
+
+    .stat_box { 
+        text-align: center; 
+        text-decoration: none !important; 
+        transition: 0.3s;
+    }
+    
+    .stat_box i { 
+        display: block; 
+        color: #333; 
+        font-size: 16px; 
+        margin-bottom: 6px; 
+    }
+    
+    .stat_box span { 
+        color: #00adef; 
+        font-weight: 900; 
+        font-size: 14px; 
+        font-family: 'Courier New', monospace; 
+    }
+    
+    .stat_box:hover i { color: #fff; transform: scale(1.2); }
+
+    .bottom_dash {
+        background: #050505;
+        padding: 20px;
+        border-top: 1px solid #111;
+        text-align: center;
+    }
+
+    .usergroup_display {
+        margin-bottom: 15px;
+        font-size: 11px;
+    }
+
+    .tool_profile_link {
+        color: #444;
+        text-decoration: none !important;
+        font-size: 10px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: 0.3s;
+    }
+
+    .tool_profile_link:hover { color: #00adef; }
+
+    .new_posts_btn {
+        display: block;
+        background: #0a0a0a;
+        border: 1px solid #1a1a1a;
+        color: #555 !important;
+        padding: 12px;
+        text-transform: uppercase;
+        font-size: 10px;
+        font-weight: 900;
+        letter-spacing: 2px;
+        text-decoration: none !important;
+        margin-top: 20px;
+        position: relative;
+        overflow: hidden;
+        transition: 0.3s;
+    }
+
+    .new_posts_btn:hover { 
+        color: #fff !important; 
+        border-color: #00adef;
+        background: #0d0d0d;
+    }
+
+    .new_posts_btn::after {
+        content: '';
+        position: absolute;
+        top: 0; left: -100%;
+        width: 100%; height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(0, 173, 239, 0.2), transparent);
+    }
+
+    .new_posts_btn:hover::after { left: 100%; transition: 0.8s; }
+</style>
+</head>
+<body>
+{$header}
+</div>
+    <div class="wrapper"> 
+    <table width="100%" cellspacing="0" cellpadding="0" border="0">
+        <tr>
+            <td valign="top">
+                
+{$forums}
+                {$boardstats}
+            </td>
+            
+            <td class="z_sidebar_container" valign="top">
+                <div class="z_card">
+                    
+                    <div class="sidebar_header_modern">
+                        <div class="sidebar_header_title">
+                            <i class="fa fa-terminal"></i> CONTROL_PANEL
+                        </div>
+                    </div>
+
+                    <div class="profile_flex">
+                        <div class="pfp_area">
+                            <div class="neon_line"></div>
+                            <img src="{$mybb->user['avatar']}" class="pfp_side" alt="User Avatar">
+                            <div class="sidebar_user_name">{$formattedname}</div>
+                        </div>
+                        
+                        <div class="stats_grid">
+                            <a href="search.php?action=finduserthreads&uid={$mybb->user['uid']}" class="stat_box" title="Threads">
+                                <i class="fa fa-file-text-o"></i> <span>{$mybb->user['threadnum']}</span>
+                            </a>
+                            <a href="search.php?action=finduser&uid={$mybb->user['uid']}" class="stat_box" title="Posts">
+                                <i class="fa fa-comments-o"></i> <span>{$mybb->user['postnum']}</span>
+                            </a>
+                            <a href="reputation.php?uid={$mybb->user['uid']}" class="stat_box" title="Reputation">
+                                <i class="fa fa-star-o"></i> <span>{$mybb->user['reputation']}</span>
+                            </a>
+                            <a href="newpoints.php" class="stat_box" title="D-Bites">
+    <i class="fa fa-money"></i> 
+    <span>{$mybb->user['newpoints']}</span>
+</a>
+                        </div>
+                    </div>
+
+                    <div class="bottom_dash">
+                        <div class="usergroup_display">
+                             <a href="member.php?action=profile&uid={$mybb->user['uid']}" class="tool_profile_link">
+                                <i class="fa fa-user"></i> VIEW MY PROFILE
+                             </a>
+                        </div>
+
+                        <a href="search.php?action=getnew" class="new_posts_btn">
+                            NEW POSTS
+                        </a>
+                    </div>
+                    
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+{$footer}
+</body>
+</html>]]></template>
+        <template name="member_profile" version="1834"><![CDATA[<html>
+<head>
+<title>{$memprofile['username']} - {$mybb->settings['bbname']}</title>
+{$headerinclude}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<style>
+    .p_main_wrapper { width: 1170px; margin: 30px auto; display: flex; flex-direction: column; gap: 15px; }
+    .p_boxes_row { display: flex; gap: 15px; width: 100%; align-items: stretch; }
+    
+    .p_torn_box { 
+        background: #0f0f0f; border: 1px solid #1a1a1a; 
+        width: 380px; height: auto; 
+        display: flex; flex-direction: column; 
+    }
+
+    .p_box_header { background: #111; border-bottom: 1px solid #1a1a1a; border-top: 2px solid #00adef; padding: 10px 15px; color: #eee; font-weight: bold; font-size: 11px; text-transform: uppercase; }
+    .p_content { padding: 18px; display: flex; flex-direction: column; gap: 10px; flex-grow: 1; }
+
+    .p_avatar_frame { border: 1px solid #222; background: #000; width: 110px; height: 110px; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+    .p_avatar_frame img { width: 100% !important; height: auto !important; }
+    .p_uid_box { background:#111; color:#444; font-size:10px; padding:5px; text-align:center; border:1px solid #222; border-top:none; font-weight: bold; }
+
+    .p_stat_line { display: flex; align-items: center; gap: 12px; background: #111; border: 1px solid #1a1a1a; padding: 10px 15px; transition: 0.3s; border-left: 3px solid #222; }
+    .p_stat_line:hover { background: #151515; transform: translateX(5px); }
+    .p_stat_line i { width: 18px; text-align: center; color: #444; font-size: 14px; transition: 0.3s; }
+    .p_stat_info { display: flex; justify-content: space-between; flex-grow: 1; align-items: center; }
+    .p_stat_count { font-size: 12px; color: #eee; font-weight: 900; }
+
+    .s_location:hover { border-left-color: #2196f3 !important; } .s_location:hover i { color: #2196f3 !important; }
+    .s_skype:hover { border-left-color: #00aff0 !important; } .s_skype:hover i { color: #00aff0 !important; }
+    .s_joined:hover { border-left-color: #9c27b0 !important; } .s_joined:hover i { color: #9c27b0 !important; }
+    .s_posts:hover { border-left-color: #ff9800 !important; } .s_posts:hover i { color: #ff9800 !important; }
+    .s_threads:hover { border-left-color: #4caf50 !important; } .s_threads:hover i { color: #4caf50 !important; }
+    .s_likes:hover { border-left-color: #e91e63 !important; } .s_likes:hover i { color: #e91e63 !important; }
+    .s_credits:hover { border-left-color: #fdd835 !important; } .s_credits:hover i { color: #fdd835 !important; }
+    .s_rep:hover { border-left-color: #00bcd4 !important; } .s_rep:hover i { color: #00bcd4 !important; }
+
+    .p_bio_area { background: #0a0a0a; border: 1px solid #151515; padding: 12px; min-height: 60px; font-size: 11px; color: #555; font-style: italic; margin-top: 5px; }
+    .p_surveillance_box { background: #0a0a0a; border: 1px solid #1a1a1a; padding: 12px; margin-top: auto; border-left: 2px solid #00adef; }
+
+    .p_wide_section { width: 100%; box-sizing: border-box; background: #0f0f0f; border: 1px solid #1a1a1a; padding: 15px; }
+    .p_wide_title { font-size: 9px; color: #333; text-transform: uppercase; font-weight: 900; border-bottom: 1px solid #1a1a1a; padding-bottom: 5px; margin-bottom: 10px; display: flex; justify-content: space-between; }
+    .p_staff_options { background: #111; border: 1px solid #1a1a1a; padding: 15px; display: flex; justify-content: center; gap: 10px; width: 100%; box-sizing: border-box; }
+</style>
+</head>
+<body>
+{$header}
+<div class="p_main_wrapper">
+    <div class="p_boxes_row">
+        <div class="p_torn_box">
+            <div class="p_box_header">User Dossier Identity</div>
+            <div class="p_content">
+                <div style="display:flex; gap:15px; margin-bottom:10px;">
+                    <div>
+                        <div class="p_avatar_frame">{$avatar}</div>
+                        <div class="p_uid_box">ID: #{$memprofile['uid']}</div>
+                    </div>
+                    <div style="flex-grow:1;">
+                        <div style="font-size:24px; font-weight:900; color:#fff;">{$formattedname}</div>
+                        <span style="font-size:9px; color:#333; text-transform:uppercase; font-weight:900;">Authority Rank</span>
+                        <div style="background:#161616; border:1px solid #222; padding:10px; font-size:11px; font-weight:bold; color:#00adef; border-left:3px solid #00adef;">{$usertitle}</div>
+                        <div class="userbar_profile" style="margin-top: 10px;">
+    {$groupimage}
+</div>
+                        <div style="margin-top:10px;">{$usergroup['image']}</div>
+                    </div>
+                </div>
+                <div class="p_bio_area">{$userfields['fid2']}</div>
+            </div>
+        </div>
+
+        <div class="p_torn_box">
+            <div class="p_box_header">Digital Surveillance Log</div>
+            <div class="p_content">
+                <div class="p_stat_line s_location"><i class="fa-solid fa-location-dot"></i><div class="p_stat_info"><span style="font-size:8px;color:#444;">ORIGIN</span><span class="p_stat_count">{$memprofile['location']}</span></div></div>
+                <div class="p_stat_line s_skype"><i class="fa-brands fa-skype"></i><div class="p_stat_info"><span style="font-size:8px;color:#444;">COMM. LINE</span><span class="p_stat_count">{$memprofile['skype']}</span></div></div>
+                <div class="p_stat_line s_joined"><i class="fa-solid fa-calendar-days"></i><div class="p_stat_info"><span style="font-size:8px;color:#444;">INFILTRATION</span><span class="p_stat_count">{$memprofile['registration']}</span></div></div>
+                <div class="p_surveillance_box">
+                    <div style="font-size:9px; color:#00adef; font-weight:900; letter-spacing: 1px;"><i class="fa-solid fa-link fa-spin"></i> NEURAL LINK ESTABLISHED...</div>
+                    <div style="font-size:10px; color:#666; border-top:1px solid #1a1a1a; margin-top:5px; padding-top:5px;">System Status: <span style="color:#eee">{$online_status}</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p_torn_box">
+            <div class="p_box_header">Combat Statistics</div>
+            <div class="p_content">
+                <div class="p_stat_line s_posts"><i class="fa-solid fa-pen-nib"></i><div class="p_stat_info"><span style="font-size:8px;color:#444;">POSTS</span><span class="p_stat_count">{$memprofile['postnum']}</span></div></div>
+                <div class="p_stat_line s_threads"><i class="fa-solid fa-file-lines"></i><div class="p_stat_info"><span style="font-size:8px;color:#444;">THREADS</span><span class="p_stat_count">{$memprofile['threadnum']}</span></div></div>
+                <div class="p_stat_line s_likes"><i class="fa-solid fa-heart"></i><div class="p_stat_info"><span style="font-size:8px;color:#444;">LIKES</span><span class="p_stat_count">{$memprofile['tyl_voted_count']}</span></div></div>
+                <div class="p_stat_line s_credits"><i class="fa-solid fa-coins"></i><div class="p_stat_info"><span style="font-size:8px;color:#444;">D-Bites</span><span class="p_stat_count">{$memprofile['newpoints']}</span></div></div>
+                <div class="p_stat_line s_rep"><i class="fa-solid fa-star"></i><div class="p_stat_info"><span style="font-size:8px;color:#444;">REPUTATION</span><span class="p_stat_count">{$reputation}</span></div></div>
+                <div style="margin-top:auto; text-align:center;">{$usergroup['userbar']}</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="p_wide_section">
+        <div class="p_wide_title"><span>Service Medals & Awards</span><i class="fa-solid fa-medal" style="color:#00adef"></i></div>
+        <div style="min-height:50px; display:flex; justify-content:center; align-items:center; background:rgba(0,0,0,0.2); border:1px dashed #222;">
+            <span style="color:#222; font-size:8px; letter-spacing:2px;">NO MEDALS ASSIGNED</span>
+        </div>
+    </div>
+
+    <div class="p_wide_section">
+        <div class="p_wide_title"><span>Transmission Signature</span><i class="fa-solid fa-terminal"></i></div>
+        <div style="color:#ccc; font-size:12px; text-align:center;">{$signature}</div>
+    </div>
+
+    <div class="p_staff_options">{$modoptions}{$adminoptions}</div>
+</div>
+{$footer}
+</body>
+</html>]]></template>
+        <template name="nav" version="1834"><![CDATA[<div class="disobey_nav_bar">
+    <div class="breadcrumb_links">
+        <i class="fa fa-home" style="color: #00adef; margin-right: 5px;"></i>
+        {$nav}
+    </div>
+</div>]]></template>
+        <template name="nav_bit" version="1834"><![CDATA[<a href="{$url}" class="nav_step">{$name}</a> <span class="nav_sep">/</span>]]></template>
+        <template name="nav_bit_active" version="1834"><![CDATA[<span class="nav_step active_step">{$name}</span>]]></template>
+        <template name="nav_sep" version="1834"><![CDATA[]]></template>
+        <template name="newreply" version="1834"><![CDATA[<html>
+<head>
+<title>{$lang->post_reply_to}</title>
+{$headerinclude}
+{$post_javascript}
+</head>
+<body style="background: #050505; color: #ccc;">
+{$header}
+
+<div class="new-reply-main" style="max-width: 1100px; margin: 50px auto; padding: 0 20px;">
+    
+    <div class="alerts-area" style="margin-bottom: 20px;">
+        {$preview}
+        {$reply_errors}
+        {$attacherror}
+        {$moderation_notice}
+    </div>
+
+    <form action="newreply.php?tid={$tid}&amp;processed=1" method="post" enctype="multipart/form-data" name="input" id="reply_form">
+        <input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
+        <input type="hidden" name="action" value="do_newreply" />
+        <input type="hidden" name="posthash" value="{$posthash}" />
+        <input type="hidden" name="quoted_ids" value="{$quoted_ids}" />
+        <input type="hidden" name="tid" value="{$tid}" />
+        <input type="hidden" name="subject" value="Re: {$thread['subject']}" />
+
+        <div style="background: #0d0d0d; border: 1px solid #1a1a1a; border-radius: 8px; overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.7);">
+            
+            <div style="padding: 30px; border-bottom: 1px solid #151515; display: flex; justify-content: space-between; align-items: center; background: linear-gradient(to right, #0d0d0d, #080808);">
+                <div>
+                    <h2 style="color: #fff; margin: 0; font-size: 22px; font-weight: 900; text-transform: uppercase; letter-spacing: 1px;">{$lang->post_new_reply}</h2>
+                    <p style="color: #444; margin: 5px 0 0 0; font-size: 11px; font-weight: bold; text-transform: uppercase;">Topic: <span style="color: #00adef;">{$thread['subject']}</span></p>
+                </div>
+                <div style="text-align: right;">
+                    <span style="display: block; color: #333; font-size: 10px; font-weight: 900; text-transform: uppercase;">Authorized User</span>
+                    <span style="color: #eee; font-weight: 900; font-size: 16px;">{$mybb->user['username']}</span>
+                </div>
+            </div>
+
+            <div style="padding: 30px; background: #0a0a0a;">
+                
+                <div class="editor-wrapper" style="margin-bottom: 30px;">
+                    {$codebuttons}
+                    <textarea id="message" name="message" rows="20" cols="70" style="width: 100%; display:none;">{$message}</textarea>
+                </div>
+
+                <div style="background: #0d0d0d; border: 1px solid #151515; border-radius: 6px; padding: 25px;">
+                    <h4 style="color: #222; font-size: 11px; font-weight: 900; text-transform: uppercase; margin-bottom: 20px; letter-spacing: 2px;">Configuration</h4>
+                    <div class="post-options-clean" style="color: #666; font-size: 13px;">
+                        {$postoptions}
+                    </div>
+                </div>
+
+                {$modoptions}
+                {$attachbox}
+            </div>
+
+            <div style="padding: 25px 40px; background: #080808; border-top: 1px solid #151515; display: flex; justify-content: flex-end; gap: 15px;">
+                <input type="submit" class="button btn-secondary" name="previewpost" value="{$lang->preview_post}" style="background: transparent; border: 1px solid #222; color: #444; padding: 14px 30px; border-radius: 4px; font-weight: bold; cursor: pointer; transition: 0.3s;" />
+                <input type="submit" class="button btn-primary" name="submit" value="{$lang->post_reply}" style="background: #00adef; border: none; color: #fff; padding: 14px 45px; border-radius: 4px; font-weight: 900; text-transform: uppercase; cursor: pointer; box-shadow: 0 10px 25px rgba(0, 173, 239, 0.2); transition: 0.3s;" />
+            </div>
+        </div>
+    </form>
+</div>
+
+{$footer}
+
+<style>
+    .post-options-clean label { color: #555 !important; margin-right: 25px; transition: 0.2s; cursor: pointer; }
+    .post-options-clean label:hover { color: #888 !important; }
+    .post-options-clean input { margin-right: 8px; filter: grayscale(1) invert(1); }
+    
+    .btn-secondary:hover { border-color: #444 !important; color: #fff !important; }
+    .btn-primary:hover { background: #009ce0 !important; transform: translateY(-2px); box-shadow: 0 15px 30px rgba(0, 173, 239, 0.4) !important; }
+</style>
+</body>
+</html>]]></template>
+        <template name="postbit" version="1834"><![CDATA[{$ignore_bit}{$deleted_bit}
+<a name="pid{$post['pid']}" id="pid{$post['pid']}"></a>
+<div class="post {$unapproved_shade}" style="{$post_visibility}" id="post_{$post['pid']}">
+    
+    <div class="post_author">
+        <div class="postbit_avatar">{$post['useravatar']}</div>
+        
+        <div class="author_info_new">
+            <div class="user_name_bit">{$post['profilelink']} {$post['onlinestatus']}</div>
+            <div class="user_rank_bit">{$post['usertitle']}</div>
+            <div class="user_stars_bit">{$post['userstars']}</div>
+        </div>
+
+        <div class="author_stats_box">
+            {$post['user_details']}
+        </div>
+    </div>
+
+    <div class="post_content">
+        <div class="post_head">
+            <span class="post_date">{$post['postdate']}</span>
+            <span class="post_num">#{$post['counter']}</span>
+        </div>
+        
+        <div class="post_body scaleimages" id="pid_{$post['pid']}">
+            {$post['message']}
+        </div>
+        
+        {$post['signature']}
+    </div>
+
+    <div class="post_controls">
+        <div class="postbit_buttons float_left">{$post['button_rep']}{$post['button_pm']}</div>
+        <div class="postbit_buttons float_right">{$post['button_edit']}{$post['button_quote']}{$post['button_report']}</div>
+    </div>
+</div>]]></template>
+        <template name="postbit_author_user" version="1834"><![CDATA[<div class="z_postbit_stats">
+    <div class="z_stat_item">
+        <i class="fa fa-file-text-o"></i>
+        <span class="z_stat_label">Threads:</span>
+        <span class="z_stat_value">{$post['threadnum']}</span>
+    </div>
+
+    <div class="z_stat_item">
+        <i class="fa fa-comments-o"></i>
+        <span class="z_stat_label">Posts:</span>
+        <span class="z_stat_value">{$post['postnum']}</span>
+    </div>
+
+    <div class="z_stat_item">
+        <i class="fa fa-star-o"></i>
+        <span class="z_stat_label">Rep:</span>
+        <span class="z_stat_value">{$post['reputation']}</span>
+    </div>
+
+    <div class="z_stat_item">
+        <i class="fa fa-money"></i>
+        <span class="z_stat_label">D-Bites:</span>
+        <span class="z_stat_value">{$post['newpoints']}</span>
+    </div>
+</div>]]></template>
+        <template name="postbit_classic" version="1834"><![CDATA[{$ignore_bit}{$deleted_bit}
+<a name="pid{$post['pid']}" id="pid{$post['pid']}"></a>
+<div class="post-zg-final {$unapproved_shade}" style="background: #0a0a0a; border: 1px solid #1a1a1a; margin-bottom: 25px; border-radius: 4px; overflow: hidden; {$post_visibility}" id="post_{$post['pid']}">
+    
+    <div style="display: flex; flex-direction: row; align-items: stretch;">
+        <div class="author-sidebar" style="width: 190px; background: #080808; border-right: 1px solid #151515; padding: 25px 15px; text-align: center; flex-shrink: 0;">
+            
+            <div style="margin-bottom: 15px;">
+                <strong style="font-size: 16px; color: #fff; text-transform: uppercase;">{$post['profilelink']}</strong>
+            </div>
+
+            <div style="margin-bottom: 20px; display: inline-block; position: relative; line-height: 0;">
+                <img src="{$post['avatar']}" alt="User Avatar" style="width: 120px; height: 120px; border-radius: 2px; border: 1px solid #222; padding: 2px; background: #111; object-fit: cover;" />
+                
+                <div class="online-status-fixed" style="position: absolute; top: -5px; right: -5px; z-index: 10;">
+                    {$post['onlinestatus']}
+                </div>
+            </div>
+
+            <div style="margin-bottom: 15px; font-size: 10px; color: #444;">
+                <div style="font-weight: bold; margin-bottom: 5px; color: #555;">{$post['usertitle']}</div>
+                <div style="margin-bottom: 8px;">{$post['userstars']}</div>
+                <div style="max-width: 100%;">{$post['groupimage']}</div>
+            </div>
+
+            <div class="zg-stats-box" style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 15px; padding: 12px 0; border-top: 1px solid #151515; border-bottom: 1px solid #151515; margin: 15px 0;">
+                <div class="st-item st-posts" title="Posts" style="display: flex; align-items: center; gap: 6px;">
+                    <i class="fa fa-comments"></i><span class="st-val">{$post['postnum']}</span>
+                </div>
+                <div class="st-item st-rep" title="Reputation" style="display: flex; align-items: center; gap: 6px;">
+                    <i class="fa fa-bolt"></i><span class="st-val">{$post['reputation']}</span>
+                </div>
+                <div class="st-item st-credits" title="Credits" style="display: flex; align-items: center; gap: 6px;">
+                    <i class="fa fa-money"></i><span class="st-val">{$post['newpoints']}</span>
+                </div>
+                <div class="st-item st-likes" title="Likes" style="display: flex; align-items: center; gap: 6px;">
+                    <i class="fa fa-heart"></i><span class="st-val">{$post['likes']}</span>
+                </div>
+            </div>
+
+            <div style="margin-top: 10px;">{$post['postbit_awards']}</div>
+        </div>
+
+        <div class="content-area" style="flex-grow: 1; padding: 30px; background: #0a0a0a; display: flex; flex-direction: column; min-width: 0;">
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #151515; padding-bottom: 12px; margin-bottom: 25px; font-size: 10px; color: #333; font-weight: bold; text-transform: uppercase;">
+                <span><i class="fa fa-calendar-o" style="margin-right: 5px;"></i> {$post['postdate']} {$post['posttime']}</span>
+                <span style="display: flex; align-items: center; gap: 10px;">
+                    {$post['icon']}
+                    <span style="color: #00adef; font-size: 12px;">{$post['posturl']}</span>
+                    {$post['subject_extra']}
+                </span>
+            </div>
+
+            <div class="post_body" id="pid_{$post['pid']}" style="font-size: 15px; line-height: 1.8; color: #aaa; flex-grow: 1;">
+                {$post['message']}
+                {$post['attachments']}
+            </div>
+
+            {$post['input_editreason']}
+
+            <div id="edited_by_{$post['pid']}" style="font-size: 10px; color: #222; margin-top: 15px;">{$post['editedmsg']}</div>
+
+            <div class="post_signature" style="margin-top: 40px; opacity: 0.1; border-top: 1px solid #1a1a1a; padding-top: 15px;">
+                {$post['signature']}
+            </div>
+            
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 10px;">
+                <div style="font-size: 9px; color: #111;">{$post['iplogged']}</div>
+                <div>{$post['poststatus']}</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="zg-footer" style="background: #080808; border-top: 1px solid #151515; padding: 12px 25px; display: flex; justify-content: space-between; align-items: center;">
+        <div class="zg-list" style="display: flex; gap: 15px;">
+            {$post['button_rep']}{$post['button_pm']}{$post['button_email']}
+        </div>
+        <div class="zg-list" style="display: flex; gap: 15px;">
+            {$post['button_edit']}{$post['button_quote']}{$post['button_multiquote']}{$post['button_report']}{$post['button_warn']}
+        </div>
+    </div>
+
+    <style>
+        .zg-list a { color: #444 !important; font-size: 10px !important; font-weight: bold; text-transform: uppercase; text-decoration: none; transition: 0.2s; }
+        .zg-list a:hover { color: #00adef !important; }
+        .zg-list img { display: none !important; }
+        
+        .st-item i { color: #333; font-size: 11px; }
+        .st-val { color: #444; font-size: 11px; font-weight: bold; }
+        .st-item:hover i { color: #00adef; }
+        .st-item:hover .st-val { color: #eee; }
+
+        .online-status-fixed img { 
+            width: 12px !important; height: 12px !important; 
+            border-radius: 50%; border: 2px solid #080808; 
+            background: #2ecc71; object-position: -999px; 
+            display: block; box-shadow: 0 0 5px rgba(46, 204, 113, 0.4);
+        }
+        .online-status-fixed img[src*="off"] { background: #333 !important; box-shadow: none; }
+        
+        .content-area a { color: inherit; text-decoration: none; }
+    </style>
+</div>]]></template>
+        <template name="showthread" version="1834"><![CDATA[<html>
+<head>
+<title>{$thread['subject']}</title>
+{$headerinclude}
+<script type="text/javascript">
+</script>
+<script type="text/javascript" src="{$mybb->asset_url}/jscripts/report.js?ver=1820"></script>
+<script src="{$mybb->asset_url}/jscripts/jeditable/jeditable.min.js"></script>
+<script type="text/javascript" src="{$mybb->asset_url}/jscripts/thread.js?ver=1827"></script>
+</head>
+<body>
+    {$header}
+    {$threadnotesbox}
+    {$pollbox}
+
+    <div class="thread_controls">
+        <div class="new_reply_wrap">{$newreply}</div>
+        <div class="rating_wrap">{$ratethread}</div>
+    </div>
+
+    <div class="float_left">{$multipage}</div>
+    <br class="clear" />
+
+    <table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder tfixed clear">
+        <tr>
+            <td class="thead">
+                <div>
+                    <strong>{$thread['displayprefix']}{$thread['subject']}</strong>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td id="posts_container">
+                <div id="posts">
+                    {$posts}
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="tfoot">
+                {$search_thread}
+                <div class="float_right">
+                    <strong>&laquo; <a href="{$next_oldest_link}">{$lang->next_oldest}</a> | <a href="{$next_newest_link}">{$lang->next_newest}</a> &raquo;</strong>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <div class="thread_controls">
+        <div>{$multipage}</div>
+        <div>{$newreply}</div>
+    </div>
+
+    <br class="clear" />
+    {$quickreply}
+    {$threadexbox}
+    {$similarthreads}
+    <br />
+    
+    <div class="thread_tools_wrapper">
+        <ul class="thread_tools">
+            {$printthread}
+            {$sendthread}
+            {$addremovesubscription}
+            {$addpoll}
+        </ul>
+    </div>
+
+    <div class="float_right" style="text-align: right;">
+        {$moderationoptions}
+        {$forumjump}
+    </div>
+    <br class="clear" />
+    {$usersbrowsing}
+    {$footer}
+
+    <script type="text/javascript">
+        var thread_deleted = "{$thread_deleted}";
+        if(thread_deleted == "1")
+        {
+            $("#quick_reply_form, .new_reply_button, .thread_tools, .inline_rating").hide();
+        }
+    </script>
+</body>
+</html>]]></template>
+        <template name="showthread_quickreply" version="1834"><![CDATA[<div id="quick_reply_box" style="margin-top: 20px; background: #0a0a0a; border: 1px solid #151515; border-radius: 8px; padding: 25px;">
+    <form method="post" action="newreply.php?tid={$tid}&amp;processed=1" name="quick_reply_form" id="quick_reply_form">
+        <input type="hidden" name="my_post_key" value="{$mybb->post_code}" />
+        <input type="hidden" name="subject" value="Re: {$thread['subject']}" />
+        <input type="hidden" name="action" value="do_newreply" />
+        <input type="hidden" name="posthash" value="{$posthash}" id="posthash" />
+        <input type="hidden" name="quoted_ids" value="" id="quoted_ids" />
+        <input type="hidden" name="lastpid" id="lastpid" value="{$last_pid}" />
+        <input type="hidden" name="from_page" value="{$page}" />
+        <input type="hidden" name="tid" value="{$tid}" />
+        <input type="hidden" name="method" value="quickreply" />
+
+        <div style="margin-bottom: 15px; display: flex; align-items: center; justify-content: space-between;">
+            <span style="color: #fff; font-weight: 900; text-transform: uppercase; font-size: 12px; letter-spacing: 1px;">Quick Response</span>
+            <span style="color: #333; font-size: 10px;">ID: #{$tid}</span>
+        </div>
+
+        <div class="editor_container">
+            {$codebuttons}
+            <textarea name="message" id="message" rows="10" cols="80" style="width: 100%; box-sizing: border-box;"></textarea>
+        </div>
+
+        <div style="margin-top: 20px; display: flex; gap: 10px; justify-content: flex-end;">
+            <input type="submit" class="button" name="previewpost" value="Preview" style="background: transparent; border: 1px solid #222; color: #555; padding: 10px 25px; border-radius: 4px; cursor: pointer; font-weight: bold;" />
+            <input type="submit" class="button" name="submit" value="Post Reply" style="background: #00adef; color: #fff; border: none; padding: 10px 35px; border-radius: 4px; font-weight: 900; text-transform: uppercase; cursor: pointer; box-shadow: 0 4px 15px rgba(0, 173, 239, 0.2);" />
+        </div>
+    </form>
+</div>]]></template>
+        <template name="usercp" version="1834"><![CDATA[<html>
+<head>
+<title>{$lang->user_cp}</title>
+{$headerinclude}
+</head>
+<body>
+{$header}
+<table width="100%" border="0" align="center">
+<tr>
+{$usercpnav}
+<td valign="top">
+<table border="0" cellspacing="{$theme['borderwidth']}" cellpadding="{$theme['tablespace']}" class="tborder">
+<tr>
+<td class="thead" colspan="{$colspan}"><strong><i class="fa fa-user-circle"></i> {$lang->account_summary}</strong></td>
+</tr>
+<tr>
+<td class="trow1" cellspacing="0" cellpadding="10">
+    <table width="100%" border="0">
+        <tr>
+            <td width="1" valign="top" style="padding-right: 20px;">
+                <div class="usercp_avatar_frame">
+                    {$avatar}
+                </div>
+            </td>
+            <td valign="top">
+                <span class="largetext"><strong>{$username}</strong></span><br />
+                
+                <div style="margin-top: 8px; line-height: 1.6;">
+                    <strong><i class="fa fa-shield"></i> الرتبة:</strong> {$usergroup}<br />
+                    <strong><i class="fa fa-calendar"></i> انضم في:</strong> {$regdate}<br />
+                    <strong><i class="fa fa-envelope"></i> {$lang->email}:</strong> {$mybb->user['email']}<br />
+                </div>
+
+                <div style="margin-top: 15px; background: rgba(0,0,0,0.2); padding: 10px; border-radius: 5px; border-left: 3px solid #00ff00; display: inline-block;">
+                    <span style="color: #00ff00; font-weight: bold; font-family: 'Orbitron', sans-serif;">
+                        <i class="fa fa-bolt"></i>CURRENT BALANCE {$mybb->user['newpoints']} D-Bits
+                    </span>
+                </div>
+            </td>
+        </tr>
+    </table>
+</td>
+</tr>
+<tr>
+    <td class="trow2">
+        <div style="display: flex; justify-content: space-between; font-size: 11px; opacity: 0.8;">
+            <span><strong>{$lang->postnum}</strong> <a href="search.php?action=finduser&amp;uid={$mybb->user['uid']}">{$mybb->user['posts']}</a></span>
+            <span>{$reputation}</span>
+            {$referral_info}
+        </div>
+    </td>
+</tr>
+</table>
+
+<div style="margin-top: 15px;">
+{$latest_subscribed}
+{$latest_threads}
+{$latest_warnings}
+{$user_notepad}
+</div>
+
+</td>
+</tr>
+</table>
+{$footer}
+</body>
+</html>]]></template>
+        <template name="usercp_nav" version="1834"><![CDATA[<td width="220" valign="top" id="disobey_sidebar_fixed">
+<style>
+    #disobey_sidebar_fixed { padding-right: 20px; }
+    
+    .nav_box {
+        background: #0a0a0a !important;
+        border: 1px solid #1a1a1a !important;
+        border-top: 2px solid #00adef !important;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    .nav_head {
+        background: #00adef;
+        color: #000;
+        padding: 10px 15px;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 11px;
+        font-weight: bold;
+        text-transform: uppercase;
+        clip-path: polygon(0 0, 100% 0, 92% 100%, 0% 100%);
+        margin-bottom: 2px;
+    }
+
+    .nav_box table { border-collapse: collapse !important; width: 100% !important; }
+    .nav_box td { display: block !important; width: 100% !important; padding: 0 !important; }
+    
+    .nav_box img { display: none !important; }
+    .nav_box li, .nav_box ul { list-style: none !important; padding: 0 !important; margin: 0 !important; background: none !important; }
+
+    .nav_box a {
+        display: block !important;
+        padding: 12px 15px !important;
+        color: #00adef !important;
+        font-size: 11px !important;
+        text-decoration: none !important;
+        text-transform: uppercase !important;
+        border-bottom: 1px solid #161616 !important;
+        transition: 0.3s ease-in-out;
+        background: transparent !important;
+    }
+
+    .nav_box a:hover {
+        background: rgba(0, 173, 239, 0.1) !important;
+        color: #fff !important;
+        padding-left: 20px !important;
+    }
+
+    .nav_box .trow_sep, 
+    .nav_box .thead, 
+    .nav_box br,
+    .nav_box b, 
+    .nav_box strong { 
+        display: none !important; 
+    }
+</style>
+
+<div class="nav_box">
+    <div class="nav_head">CONTROL_PANEL</div>
+    <table border="0" cellspacing="0" cellpadding="0">
+        {$ucp_nav_home}
+        {$usercpmenu}
+    </table>
+</div>
+</td>]]></template>
+    </templates>
+</theme>
